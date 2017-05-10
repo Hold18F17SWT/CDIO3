@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="18CDIO3:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="18CDIO3.war">
+      <element id="artifact" artifact-name="18CDIO3:war exploded" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/web/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

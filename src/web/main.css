@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, serif;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: #DDFFDD;
+}
+main{
+    width: 850px;
+    background-color: #DDDDFF;
+    margin: 25px auto;
+    padding: 15px;
+    height: 100%;
+}
+input{
+    margin: 3px 0 3px 0;
+    width: 140px;
+    height: 10px;
+    border: none;
+    padding: 5px;
+    border-right: 4px solid #DDDDFF;
+}
+td{
+    background: #FFFFFF;
+    width: 125px;
+}
+tr:hover td{
+    background: #DDFFFF;
+}
+h1{
+    font-size: 150%;
+}
+.regularCheckbox{
+    width: auto;
+    margin: 5px 0 5px 0;
+
+}
+.menuoption{
+    float: left;
+    display: inline-block;
+    width: 210px;
+    text-align: center;
+    height: 75px;
+    background: #FFDDFF;
+    border-left: 2px solid #DDDDFF;
+    line-height: 75px;
+    font-weight: bold;
+}
+.menuoption:hover{
+    background: #FFFFDD;
+}
+.stretch{
+    clear: left;
+}
+.contentWrapper{
+    background-color: #FFDDFF;
+    margin: 25px;
+    padding: 15px;
+}
+#logonWrapper {
+    background-color: #FFDDFF;
+    display: inline-block;
+    margin: 25px;
+    padding: 15px;
+}
+#logonSubmitButton {
+    height: 20px;
+    width: 150px;
+    background-color: #DDFFFF;
+    font-weight: bold;
+    line-height: 12px;
+    border:none;
+    margin: 2px 0 0 0;
+}
+#opretBruger{
+    width: auto;
+}
+#opretBrugerButton{
+    height: 20px;
+    width: 150px;
+    background-color: #DDFFFF;
+    font-weight: bold;
+    line-height: 12px;
+    border: none;
+}
+#headlineTable{
+    font-weight: bold;
+}
