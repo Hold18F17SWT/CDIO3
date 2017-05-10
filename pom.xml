@@ -36,7 +36,7 @@
 
     </dependencies>
     <build>
-        <finalName>12cdio3</finalName>
+        <finalName>18CDIO3</finalName>
         <plugins>
 
             <plugin>
