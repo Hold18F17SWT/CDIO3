@@ -13,12 +13,12 @@ $.ajax({
     dataType: "json"
 });
 
-// userArray.push(new User("1","DrGoat", "DG", "794613-9487", "turnips666",["pharmacist","laborant"]))
-// userArray.push(new User("2","Bames Jond", "BJ", "435223-2234", "antifrost","laborant"))
-// userArray.push(new User("3","Peter Parker", "PP", "126748-1234", "permafrost","laborant"))
-// userArray.push(new User("4","Someting awful", "SA", "336441-6644", "darknezzz","administrator"))
-// userArray.push(new User("5","William", "W", "974465-2221", "finishvodka","produktionsleder"))
-// userArray.push(new User("6","Gummiand", "GA", "844655-2176", "kappapride1234","laborant"))
+ userArray.push(new User("1","DrGoat", "DG", "794613-9487", "turnips666",["pharmacist","laborant"]))
+ userArray.push(new User("2","Bames Jond", "BJ", "435223-2234", "antifrost","laborant"))
+ userArray.push(new User("3","Peter Parker", "PP", "126748-1234", "permafrost","laborant"))
+ userArray.push(new User("4","Someting awful", "SA", "336441-6644", "darknezzz","administrator"))
+ userArray.push(new User("5","William", "W", "974465-2221", "finishvodka","produktionsleder"))
+ userArray.push(new User("6","Gummiand", "GA", "844655-2176", "kappapride1234","laborant"))
 
 
 function generateOversigt(){
@@ -156,31 +156,7 @@ function generateUser(){
     var generatedPassword = document.getElementById("opretBrugerPassword").value;
     var generatedRoles = generateRoles();
     var generatedUser = new User("tbd", generatedUsername, generatedIni, generatedCpr, generatedPassword, generatedRoles);
-    //userArray.push(generatedUser);
-
-    //$.post("rest/users", {username: generatedUsername, ini: generatedIni, cpr: generatedCpr, password: generatedPassword, roles: generatedRoles}, function(data) {
-    //    userArray.push(generatedUser);
-    //}, "json");
-
-    var userJson = ({"userName": 2, "initials": generatedIni, "cpr": generatedCpr, "password": generatedPassword, "roles": generatedRoles}).serializeJSON();
-    console.log(userJson);
-    $.ajax({
-        method: "POST",
-        url: "rest/users",
-        data: userJson,
-        contentType: "application/json",
-        success: function(response) {
-            if (response === "true") {
-                console.log("Success creating user");
-                loadUsers();
-            } else {
-                console.log("User already exists");
-            }
-        },
-        error: function() {
-            console.log("Error creating user");
-        }
-    });
+    userArray.push(generatedUser);
 
     console.log("new user generated: " + generatedUser);
     console.log(userArray);

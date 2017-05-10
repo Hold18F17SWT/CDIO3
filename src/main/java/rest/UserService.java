@@ -21,7 +21,6 @@ public class UserService {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public boolean createUser(UserDTO user) {
-        System.out.println("User created");
         return users.createUser(user);
     }
 
