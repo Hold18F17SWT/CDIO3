@@ -10,27 +10,28 @@ import java.util.List;
 
 @Path("users")
 public class UserService {
-    private UserDAO idao = new UserDAOMem();
+    private static UserDAO users = new UserDAOMem();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<UserDTO> getUserList() {
-        return idao.getUserList();
+        return users.getUserList();
     }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public boolean createUser(UserDTO user) {
-        return idao.createUser(user);
+        System.out.println("User created");
+        return users.createUser(user);
     }
 
     @PUT
     public boolean updateUser(UserDTO user) {
-        return idao.updateUser(user);
+        return users.updateUser(user);
     }
 
     @DELETE
     public boolean deleteUser(UserDTO user) {
-        return idao.deleteUser(user.getUserId());
+        return users.deleteUser(user.getUserId());
     }
 }

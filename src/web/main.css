@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, serif;
+    font-family: Arial, sans-serif;
 }
 html{
     height: 100%;
@@ -10,7 +10,7 @@ body{
     height: 100%;
     background: #DDFFDD;
 }
-main{
+#main{
     width: 850px;
     background-color: #DDDDFF;
     margin: 25px auto;
